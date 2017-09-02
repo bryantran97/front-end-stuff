@@ -1,20 +1,83 @@
+// Base Styles
+*
+  margin: 0
+  padding: 0
+
 body
   font-family: "Open Sans", sans-serif
 
 h1
-  font-size: 25px
   color: #ccc
+  font-size: 40px
   weight: 300
+  padding-bottom: 30px
 
 figure
   margin: auto
 
 .content
+  position: relative
+  background: white
+  margin-bottom: 400px
+  overflow: hidden
+
   article
-    padding: 100px 0
-    max-width: 648px
+    padding: 100px 10px
+    max-width: 640px
     margin: 0 auto
     text-align: center
 
+  p
+    padding-top: 30px
+
 img
   max-width: 100%
+
+
+
+
+// Parallax
+
+.bird-box
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/bird-bg.jpg)
+    size: auto 650px
+    position: top center
+    attachment: fixed
+  overflow: hidden
+
+.logo
+  height: 100px
+  width: 100%
+  background:
+    image: url(../images/black-bird-logo.svg)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  margin-top: -100px
+
+.fore-bird
+  width: 960px
+  height: 733px
+  background:
+    image: url(../images/fore-bird.png)
+    repeat: no-repeat
+    position: right bottom
+  position: absolute
+  left: 50%
+  margin-left: -480px
+  top: 380px
+
+.back-bird
+  width: 960px
+  height: 298px
+  background:
+    image: url(../images/back-bird.png)
+    repeat: no-repeat
+    position: top left
+  position: absolute
+  left: 50%
+  margin-left: -480px
