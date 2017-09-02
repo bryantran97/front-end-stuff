@@ -8,9 +8,7 @@ body
 
 h1
   color: #ccc
-  font-size: 40px
   weight: 300
-  padding-bottom: 30px
 
 figure
   margin: auto
@@ -22,19 +20,13 @@ figure
   overflow: hidden
 
   article
-    padding: 100px 10px
+    padding: 100px 0px
     max-width: 640px
     margin: 0 auto
     text-align: center
 
-  p
-    padding-top: 30px
-
 img
   max-width: 100%
-
-
-
 
 // Parallax
 
@@ -81,3 +73,18 @@ img
   position: absolute
   left: 50%
   margin-left: -480px
+
+
+// Model Grid
+
+.clothes-pics
+  figure
+    margin-bottom: 20px
+    position: relative
+    opacity: 0
+    transform: translateY(-60px)
+    transition: 0.4s all ease
+
+    &.is-showing
+      opacity: 1
+      transform: translateY(0px)

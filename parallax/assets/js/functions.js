@@ -1,7 +1,6 @@
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-  console.log(wScroll);
 
   $('.logo').css({
     'transform' : 'translate(0px, '+ wScroll /2 +'%)'
@@ -14,4 +13,15 @@ $(window).scroll(function(){
   $('.fore-bird').css({
     'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
   })
+
+  if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
+
+    $('.clothes-pics figure').each(function(i) {
+
+      setTimeout(function(){
+        $('.clothes-pics figure').eq(i).addClass('is-showing');
+      }, 150 * (i+1));
+    });
+
+  }
 })
