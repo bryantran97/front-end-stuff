@@ -83,11 +83,38 @@ img
     position: relative
     opacity: 0
     transform: translateY(-60px)
-    transition: 0.4s all ease
+    transition: all 0.3s ease-in-out
+    overflow: hidden
+    cursor: pointer
 
     &.is-showing
       opacity: 1
       transform: translateY(0px)
+
+    img
+      display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+
+    &:hover
+      figcaption
+        left: 0%
+
+      img
+        transform: scale(1.1)
+
+  margin-bottom: 100px
+  margin-top: 100px
+
+figcaption
+  position: absolute
+  bottom: 10px
+  left: -100%
+  background: black
+  color: white
+  padding: 2px 8px
+  font-size: 11px
+  transition: all 0.3s ease-in-out
 
   // large-window
 
