@@ -24,4 +24,12 @@ $(window).scroll(function(){
     });
 
   }
+
+  if(wScroll > $('.large-window').offset().top - $(window).height()){
+
+    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
+
+    $('.window-tint').css({'opacity': opacity})
+
+  }
 })
